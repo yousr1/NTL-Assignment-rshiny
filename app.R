@@ -2,7 +2,9 @@
 library(shinydashboard)
 library(ggplot2)
 options(shiny.maxRequestSize=30*1024^2) 
-
+y_sample<-data.frame('Dependents'=as.factor(0),'PaperlessBilling'=as.factor(0),'OnlineBackup'=as.factor(0),'TotalCharges'=3000,'TechSupport'=as.factor(0),'OnlineSecurity'=as.factor(0),'SeniorCitizen'=as.integer(0) , 'Contract'=as.factor(0))
+mean_tc<-0
+std_tc<-1
 assign('y_sample',y_sample,envir=globalenv())
 assign('mean_tc',mean_tc,envir=globalenv())
 assign('std_tc',std_tc,envir=globalenv())
